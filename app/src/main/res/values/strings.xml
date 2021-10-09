@@ -6,4 +6,9 @@
     <string name="create_account">Create Account</string>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="log_in">Log in</string>
+    <string name="phone_or_email_address">Phone or email address</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up_here">Sign up here</string>
 </resources>
