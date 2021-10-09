@@ -45,7 +45,7 @@
         android:background="@drawable/edit_text"
         android:ems="10"
         android:fontFamily="@font/inter_medium"
-        android:inputType="textPersonName"
+        android:inputType="textPersonName|phone"
         android:paddingStart="20dp"
         android:paddingEnd="15dp"
         android:text="@string/phone_or_email_address"
