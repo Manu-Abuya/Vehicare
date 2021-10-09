@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Vehicare/app/src/main/res/drawable/ic_baseline_horizontal_rule.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Vehicare/app/src/main/res/drawable/rounded_corner.xml" value="0.1" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Vehicare/app/src/main/res/layout/activity_main.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Vehicare/app/src/main/res/layout/activity_startup.xml" value="0.18" />
       </map>
     </option>
   </component>

@@ -4,6 +4,140 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F7F7F9"
     tools:context=".StartupActivity">
+
+    <ImageView
+        android:id="@+id/img_startup_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_vehicare_logo1"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_google_signIn"
+        android:layout_width="319dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/rounded_corner"
+        android:drawableStart="@drawable/ic_googleicon"
+        android:elevation="8dp"
+        android:fontFamily="@font/inter_regular"
+        android:paddingStart="39dp"
+        android:paddingEnd="15dp"
+        android:text="@string/sign_in_with_google"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textFontWeight="500"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_startup_logo"
+        tools:ignore="MissingConstraints,UnusedAttribute" />
+
+    <ImageView
+        android:id="@+id/img_divider_right"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="60dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_google_signIn"
+        app:srcCompat="@drawable/ic_baseline_horizontal_rule"
+        tools:ignore="ContentDescription,VectorDrawableCompat,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/img_divider_left"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="54dp"
+        android:background="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_google_signIn"
+        app:srcCompat="@drawable/ic_baseline_horizontal_rule"
+        tools:ignore="ContentDescription,VectorDrawableCompat,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="@string/or"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_google_signIn"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <Button
+        android:id="@+id/btn_createAccount"
+        android:layout_width="319dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="@font/inter_regular"
+        android:paddingStart="100dp"
+        android:paddingEnd="100dp"
+        android:text="@string/create_account"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_divider" />
+
+    <TextView
+        android:id="@+id/text_availableAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="@string/already_have_an_account"
+        android:textColor="#040404"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_createAccount"
+        tools:text="Already have an account?" />
+
+    <TextView
+        android:id="@+id/text_startup_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginLeft="166dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginRight="166dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/log_in"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_availableAccount" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

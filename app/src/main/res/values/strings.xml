@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Vehicare</string>
     <string name="splash_screen">Splash Screen</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="or">or</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="log_in">Log in</string>
 </resources>
