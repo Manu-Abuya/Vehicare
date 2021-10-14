@@ -16,4 +16,8 @@
     <string name="password">Password</string>
     <string name="confirm_password">Confirm password</string>
     <string name="complete">Complete</string>
+    <string name="vehicle_registration">Vehicle Registration</string>
+    <string name="vehicle_license_no">Vehicle License No.</string>
+    <string name="vehicle_insurance_no">Vehicle Insurance No.</string>
+    <string name="vehicle_identification_no">Vehicle Identification No.</string>
 </resources>
