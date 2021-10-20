@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "642906239599",
+    "project_id": "vehicare-28ffe",
+    "storage_bucket": "vehicare-28ffe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642906239599:android:47a8fb1e782ec24546939a",
+        "android_client_info": {
+          "package_name": "com.example.vehicare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642906239599-j32aerlb4lgsqoqr505f0adbf2fq9ojc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr2hQsrIbpYZz9nXoLN5lnVrd-8oQohgM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642906239599-j32aerlb4lgsqoqr505f0adbf2fq9ojc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
