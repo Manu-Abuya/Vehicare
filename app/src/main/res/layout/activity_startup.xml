@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/ic_vehicare_logo1"
         tools:ignore="ContentDescription,MissingConstraints" />
 
-    <Button
+    <com.google.android.gms.common.SignInButton
         android:id="@+id/btn_google_signIn"
         android:layout_width="319dp"
         android:layout_height="60dp"
