@@ -27,6 +27,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="46dp"
         android:layout_marginEnd="28dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:background="@drawable/rounded_corner"
         android:drawableStart="@drawable/ic_googleicon"
         android:elevation="8dp"

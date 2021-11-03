@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -20,6 +21,7 @@ public class StartupActivity extends AppCompatActivity {
 
     SignInButton signInButton;
     GoogleSignInClient mGoogleSignInClient;
+    Button button;
     static final int RC_SIGN_IN = 0;
 
     @Override
@@ -28,7 +30,8 @@ public class StartupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_startup);
 
 
-        signInButton = (SignInButton) findViewById(R.id.btn_google_signIn);
+        signInButton = findViewById(R.id.btn_google_signIn);
+        button = findViewById(R.id.btn_createAccount);
 
         // Configure sign-in to request the user's ID, email address, and basic
         // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
@@ -39,6 +42,7 @@ public class StartupActivity extends AppCompatActivity {
         // Build a GoogleSignInClient with the options specified by gso.
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
+        /* Google Sign-in button onClickListener */
         signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,7 +53,22 @@ public class StartupActivity extends AppCompatActivity {
                 }
             }
         });
+
+        /* Create button onClickListener */
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openNewActivity();
+            }
+        });
     }
+
+    public void openNewActivity() {
+        Intent intent = new Intent(this, SignupActivity.class);
+        startActivity(intent);
+    }
+
+    /* End of CreateButton Functionality */
 
     private void signIn() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
@@ -72,7 +91,9 @@ public class StartupActivity extends AppCompatActivity {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
             // Signed in successfully, show authenticated UI.
 //            updateUI(account); (to be done)
-            Toast.makeText(this, "Sign-in Successful", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Sign-in Successful", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(StartupActivity.this, VehicleRegActivity.class );
+            startActivity(intent);
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
             Log.w("Error", "signInResult:failed code=" + e.getStatusCode());
@@ -80,5 +101,20 @@ public class StartupActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        // Check for existing Google Sign In account, if the user is already signed in
+        // the GoogleSignInAccount will be non-null.
+        GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
+//        updateUI(account);
+        if (account != null) 
+        {
+            Toast.makeText(this, "User already Signed-in", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getApplicationContext(), VehicleRegActivity.class);
+            startActivity(intent);
+        }
+    }
 
 }

@@ -67,7 +67,7 @@
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/editTextNumber_vehLicenseNo"
+        android:id="@+id/editText_vehLicenseNo"
         android:layout_width="319dp"
         android:layout_height="54dp"
         android:layout_marginStart="28dp"
@@ -76,20 +76,24 @@
         android:background="@drawable/edit_text"
         android:ems="10"
         android:fontFamily="@font/inter_medium"
-        android:inputType="number"
+        android:hint="@string/vehicle_license_no"
+        android:textColor="#243443"
+        android:inputType="text"
         android:paddingStart="20dp"
         android:paddingEnd="15dp"
-        android:text="@string/vehicle_license_no"
-        android:textColor="#243443"
+        android:textColorHint="#243443"
         android:textSize="14sp"
         android:textStyle="normal"
+        android:cursorVisible="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerVehModel"
         tools:ignore="Autofill,LabelFor,TextContrastCheck" />
 
     <EditText
-        android:id="@+id/editTextNumber_vehInsuNo"
+        android:id="@+id/editText_vehInsuNo"
         android:layout_width="319dp"
         android:layout_height="54dp"
         android:layout_marginStart="28dp"
@@ -98,20 +102,24 @@
         android:background="@drawable/edit_text"
         android:ems="10"
         android:fontFamily="@font/inter_medium"
-        android:inputType="number"
+        android:hint="@string/vehicle_insurance_no"
+        android:inputType="text"
         android:paddingStart="20dp"
         android:paddingEnd="15dp"
-        android:text="@string/vehicle_insurance_no"
+        android:textColorHint="#243443"
         android:textColor="#243443"
         android:textSize="14sp"
         android:textStyle="normal"
+        android:cursorVisible="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_vehLicenseNo"
+        app:layout_constraintTop_toBottomOf="@+id/editText_vehLicenseNo"
         tools:ignore="Autofill,LabelFor,TextContrastCheck" />
 
     <EditText
-        android:id="@+id/editTextNumber_vehIDNo"
+        android:id="@+id/editText_vehIDNo"
         android:layout_width="319dp"
         android:layout_height="54dp"
         android:layout_marginStart="28dp"
@@ -120,16 +128,20 @@
         android:background="@drawable/edit_text"
         android:ems="10"
         android:fontFamily="@font/inter_medium"
-        android:inputType="number"
+        android:hint="@string/vehicle_identification_no"
+        android:inputType="text"
         android:paddingStart="20dp"
         android:paddingEnd="15dp"
-        android:text="@string/vehicle_identification_no"
+        android:textColorHint="#243443"
         android:textColor="#243443"
         android:textSize="14sp"
         android:textStyle="normal"
+        android:cursorVisible="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_vehInsuNo"
+        app:layout_constraintTop_toBottomOf="@+id/editText_vehInsuNo"
         tools:ignore="Autofill,LabelFor,TextContrastCheck" />
 
     <Button
@@ -148,7 +160,7 @@
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_vehIDNo"
+        app:layout_constraintTop_toBottomOf="@+id/editText_vehIDNo"
         tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
