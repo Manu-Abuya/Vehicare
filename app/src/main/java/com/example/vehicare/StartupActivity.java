@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -22,6 +23,7 @@ public class StartupActivity extends AppCompatActivity {
     SignInButton signInButton;
     GoogleSignInClient mGoogleSignInClient;
     Button button;
+    TextView textView;
     static final int RC_SIGN_IN = 0;
 
     @Override
@@ -32,6 +34,7 @@ public class StartupActivity extends AppCompatActivity {
 
         signInButton = findViewById(R.id.btn_google_signIn);
         button = findViewById(R.id.btn_createAccount);
+        textView = findViewById(R.id.text_startup_login);
 
         // Configure sign-in to request the user's ID, email address, and basic
         // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
@@ -59,6 +62,14 @@ public class StartupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openNewActivity();
+            }
+        });
+
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StartupActivity.this, SigninActivity.class);
+                startActivity(intent);
             }
         });
     }
