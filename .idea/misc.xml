@@ -14,16 +14,22 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/Vehicare/app/src/main/res/layout/activity_startup.xml" value="0.18" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Vehicare/app/src/main/res/layout/activity_vehicle_reg.xml" value="0.2" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/drawable/edit_text.xml" value="0.17777777777777778" />
+        <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/drawable/ic_baseline_add.xml" value="0.19538461538461538" />
+        <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/drawable/ic_baseline_horizontal_rule.xml" value="0.19538461538461538" />
+        <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/drawable/ic_baseline_remove_red_eye.xml" value="0.19538461538461538" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/drawable/ic_view_password.xml" value="0.1984375" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/drawable/rounded_corner.xml" value="0.17777777777777778" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/drawable/spinner_bg.xml" value="0.1984375" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_first.xml" value="0.22" />
+        <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_home.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_main2.xml" value="0.18229166666666666" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_signin.xml" value="0.22" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_signup.xml" value="0.22" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_startup.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_vehicle_reg.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/content_home.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/fragment_first.xml" value="0.14666666666666667" />
       </map>
     </option>
   </component>
