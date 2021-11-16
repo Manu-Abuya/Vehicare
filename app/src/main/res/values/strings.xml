@@ -30,4 +30,9 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="stats_charts"><![CDATA[Stats & Charts]]></string>
+    <string name="driver_s_email">Driver\'s Email</string>
+    <string name="driver_s_name">Driver\'s Name</string>
+    <string name="vehicle_name">Vehicle Name</string>
+    <string name="vehicle_license_number">Vehicle License Number</string>
+    <string name="other_details">Other Details</string>
 </resources>
