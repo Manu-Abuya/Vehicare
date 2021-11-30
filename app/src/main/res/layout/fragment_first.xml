@@ -302,42 +302,6 @@
         android:background="#00252424"
         android:backgroundTint="#001D1C1C"/>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:orientation="vertical"
-            tools:ignore="UselessLeaf,UselessParent">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:orientation="horizontal"
-                android:layout_alignParentStart="false"
-                tools:ignore="ObsoleteLayoutParam">
-
-                <Button
-                    android:id="@+id/button_first"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/stats_charts"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/inter_bold"
-                    android:textSize="18sp"
-                    android:paddingStart="150dp"
-                    android:paddingEnd="135dp"
-                    android:background="@drawable/rounded_corner_blue"
-                    android:layout_gravity="center_vertical|center_horizontal"/>
-            </LinearLayout>
-        </LinearLayout>
-
-    </RelativeLayout>
 
 </LinearLayout>
