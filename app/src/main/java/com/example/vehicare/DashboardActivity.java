@@ -15,7 +15,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.vehicare.databinding.ActivityHomeBinding;
 
-public class HomeActivity extends AppCompatActivity {
+public class DashboardActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityHomeBinding binding;
