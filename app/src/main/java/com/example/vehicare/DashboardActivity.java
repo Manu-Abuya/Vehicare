@@ -1,19 +1,17 @@
 package com.example.vehicare;
 
 import android.os.Bundle;
-
-import com.google.android.material.snackbar.Snackbar;
-
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.view.LayoutInflater;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.vehicare.databinding.ActivityHomeBinding;
+import com.google.android.material.snackbar.Snackbar;
 
 public class DashboardActivity extends AppCompatActivity {
 
@@ -47,5 +45,19 @@ public class DashboardActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_home);
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    private static class ActivityHomeBinding {
+        public Toolbar toolbar;
+        public View fab;
+
+        public static ActivityHomeBinding inflate(LayoutInflater layoutInflater) {
+
+            return null;
+        }
+
+        public View getRoot() {
+            return null;
+        }
     }
 }

@@ -1,7 +1,5 @@
 package com.example.vehicare;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -103,7 +103,7 @@ public class StartupActivity extends AppCompatActivity {
             // Signed in successfully, show authenticated UI.
 //            updateUI(account); (to be done)
             //Toast.makeText(this, "Sign-in Successful", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(StartupActivity.this, VehicleRegActivity.class );
+            Intent intent = new Intent(StartupActivity.this, VehicleRegActivity.class);
             startActivity(intent);
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
@@ -120,8 +120,7 @@ public class StartupActivity extends AppCompatActivity {
         // the GoogleSignInAccount will be non-null.
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
 //        updateUI(account);
-        if (account != null) 
-        {
+        if (account != null) {
             Toast.makeText(this, "User already Signed-in", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(getApplicationContext(), VehicleRegActivity.class);
             startActivity(intent);

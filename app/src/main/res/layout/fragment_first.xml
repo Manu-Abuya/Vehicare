@@ -55,19 +55,30 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:background="#00252424"
-        android:backgroundTint="#001D1C1C"/>
+        android:backgroundTint="#001D1C1C" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageViewProfile"
-            android:layout_width="184dp"
-            android:layout_height="174dp"
-            android:src="@drawable/ic_profile_picture"
-            tools:ignore="ContentDescription" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewProfile"
+                android:layout_width="184dp"
+                android:layout_height="174dp"
+                android:src="@drawable/ic_profile_picture"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="184dp"
+                android:layout_height="174dp"
+                android:src="@drawable/frame" />
+
+        </FrameLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -77,7 +88,7 @@
             tools:ignore="RelativeOverlap">
 
             <View
-                android:id="@+id/divider"
+                android:id="@+id/divider2"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:background="#00252424"
@@ -104,7 +115,7 @@
             </LinearLayout>
 
             <View
-                android:id="@+id/divider"
+                android:id="@+id/divider3"
                 android:layout_width="match_parent"
                 android:layout_height="28dp"
                 android:background="#00252424"
@@ -135,11 +146,11 @@
     </RelativeLayout>
 
     <View
-        android:id="@id/divider"
+        android:id="@id/divider1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#00252424"
-        android:backgroundTint="#001D1C1C"/>
+        android:backgroundTint="#001D1C1C" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -177,11 +188,11 @@
     </RelativeLayout>
 
     <View
-        android:id="@id/divider"
+        android:id="@id/divider4"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#00252424"
-        android:backgroundTint="#001D1C1C"/>
+        android:backgroundTint="#001D1C1C" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -219,11 +230,11 @@
     </RelativeLayout>
 
     <View
-        android:id="@id/divider"
+        android:id="@id/divider5"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#00252424"
-        android:backgroundTint="#001D1C1C"/>
+        android:backgroundTint="#001D1C1C" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -261,11 +272,11 @@
     </RelativeLayout>
 
     <View
-        android:id="@id/divider"
+        android:id="@id/divider8"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#00252424"
-        android:backgroundTint="#001D1C1C"/>
+        android:backgroundTint="#001D1C1C" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -303,11 +314,11 @@
     </RelativeLayout>
 
     <View
-        android:id="@id/divider"
+        android:id="@id/divider6"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#00252424"
-        android:backgroundTint="#001D1C1C"/>
+        android:backgroundTint="#001D1C1C" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -345,11 +356,11 @@
     </RelativeLayout>
 
     <View
-        android:id="@id/divider"
+        android:id="@id/divider7"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="#00252424"
-        android:backgroundTint="#001D1C1C"/>
+        android:backgroundTint="#001D1C1C" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -387,10 +398,5 @@
         </LinearLayout>
 
     </RelativeLayout>
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
 </LinearLayout>
