@@ -62,12 +62,23 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageViewProfile"
-            android:layout_width="184dp"
-            android:layout_height="174dp"
-            android:src="@drawable/ic_profile_picture"
-            tools:ignore="ContentDescription" />
+       <FrameLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/imageViewProfile"
+               android:layout_width="184dp"
+               android:layout_height="174dp"
+               android:src="@drawable/ic_profile_picture"
+               tools:ignore="ContentDescription" />
+
+           <ImageView
+               android:layout_width="184dp"
+               android:layout_height="174dp"
+               android:src="@drawable/frame"/>
+
+       </FrameLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -387,10 +398,5 @@
         </LinearLayout>
 
     </RelativeLayout>
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
 </LinearLayout>
