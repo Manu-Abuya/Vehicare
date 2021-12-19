@@ -9,32 +9,33 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.w3c.dom.Text;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class SignupActivity extends AppCompatActivity {
 
     ImageButton ImageButton;
-    private EditText editText_signupName;
-    private EditText editText_signupPhoneEmail;
-    private EditText editTextDOB;
-    private EditText editText_signupPassword;
-    private EditText editText_confPassword;
-    private Button button_signupComplete;
+    EditText editText_signupPhoneEmail, editText_signupPassword;
+    Button button_signupComplete;
+    FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        ImageButton = (ImageButton) findViewById(R.id.img_back_Signup);
-        editText_signupName = findViewById(R.id.editText_signupName);
+        ImageButton = findViewById(R.id.img_back_Signup);
         editText_signupPhoneEmail = findViewById(R.id.editText_signupPhoneEmail);
-        editTextDOB = findViewById(R.id.editTextDOB);
         editText_signupPassword = findViewById(R.id.editText_signupPassword);
-        editText_confPassword = findViewById(R.id.editText_confPassword);
         button_signupComplete = findViewById(R.id.button_signupComplete);
+
+        //Get Firebase auth instance
+        auth = FirebaseAuth.getInstance();
 
         ImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,26 +48,31 @@ public class SignupActivity extends AppCompatActivity {
         button_signupComplete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String txt_Name = editText_signupName.getText().toString();
-                String txt_PhoneEmail = editText_signupPhoneEmail.getText().toString();
-                String txt_DOB = editTextDOB.getText().toString();
-                String txt_Password = editText_signupPassword.getText().toString();
-                String txt_confPassword = editText_confPassword.getText().toString();
+                String phoneEmail = editText_signupPhoneEmail.getText().toString().trim();
+                String password = editText_signupPassword.getText().toString().trim();
 
-                if (TextUtils.isEmpty(txt_Name || TextUtils.isEmpty(txt_PhoneEmail || TextUtils.isEmpty(txt_DOB || TextUtils.isEmpty(txt_Password || TextUtils.isEmpty(txt_Password || TextUtils.isEmpty(txt_confPassword))))))){
-                    Toast.makeText(SignupActivity.this, "Empty Credentials", Toast.LENGTH_SHORT).show();
-                } else if (txt_Password.length() < 6){
-                    Toast.makeText(SignupActivity.this, "Password too short", Toast.LENGTH_SHORT).show();
-                } else if (txt_Password != txt_confPassword){
-                    Toast.makeText(SignupActivity.this, "Password does not match", Toast.LENGTH_SHORT).show();
+                if (TextUtils.isEmpty(phoneEmail) || TextUtils.isEmpty(password)) {
+                    Toast.makeText(SignupActivity.this, "Empty credentials", Toast.LENGTH_SHORT).show();
+                } else if (password.length() < 6) {
+                    Toast.makeText(SignupActivity.this, "Password too short!", Toast.LENGTH_SHORT).show();
                 } else {
-                    registerUser(txt_Name, txt_PhoneEmail, txt_DOB, txt_Password, txt_confPassword);
+                    registerUser(phoneEmail, password);
                 }
             }
         });
     }
 
-    private void registerUser(String txt_Name, String txt_PhoneEmail, String txt_DOB, String txt_Password, String txt_confPassword){
-
+    private void registerUser(String phoneEmail, String password) {
+        auth.createUserWithEmailAndPassword(phoneEmail, password).addOnCompleteListener(SignupActivity.this, new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()) {
+                    startActivity(new Intent(SignupActivity.this, VehicleRegActivity.class));
+                    Toast.makeText(SignupActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(SignupActivity.this, "Registration failed", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 }

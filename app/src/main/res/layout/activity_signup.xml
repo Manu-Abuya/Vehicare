@@ -54,34 +54,11 @@
         tools:ignore="ContentDescription" />
 
     <EditText
-        android:id="@+id/editText_signupName"
-        android:layout_width="319dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="28dp"
-        android:background="@drawable/edit_text"
-        android:ems="10"
-        android:fontFamily="@font/inter_medium"
-        android:inputType="textPersonName"
-        android:paddingStart="20dp"
-        android:paddingEnd="15dp"
-        android:hint="@string/name"
-        android:textColorHint="#243443"
-        android:textColor="#243443"
-        android:textSize="14sp"
-        android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_signup_logo"
-        tools:ignore="Autofill,LabelFor,TextContrastCheck" />
-
-    <EditText
         android:id="@+id/editText_signupPhoneEmail"
         android:layout_width="319dp"
         android:layout_height="54dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="28dp"
         android:background="@drawable/edit_text"
         android:ems="10"
@@ -96,38 +73,15 @@
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_signupName"
-        tools:ignore="Autofill,LabelFor,TextContrastCheck" />
-
-    <EditText
-        android:id="@+id/editTextDOB"
-        android:layout_width="319dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="28dp"
-        android:background="@drawable/edit_text"
-        android:ems="10"
-        android:fontFamily="@font/inter_medium"
-        android:hint="@string/date_of_birth"
-        android:inputType="text"
-        android:paddingStart="20dp"
-        android:paddingEnd="15dp"
-        android:textColor="#243443"
-        android:textColorHint="#243443"
-        android:textSize="14sp"
-        android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_signupPhoneEmail"
-        tools:ignore="Autofill,LabelFor,TextContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@id/img_signup_logo"
+        tools:ignore="Autofill,LabelFor,MissingConstraints,TextContrastCheck" />
 
     <EditText
         android:id="@+id/editText_signupPassword"
         android:layout_width="319dp"
         android:layout_height="54dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="28dp"
         android:background="@drawable/edit_text"
         android:drawableEnd="@drawable/ic_baseline_remove_red_eye"
@@ -143,39 +97,15 @@
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDOB"
-        tools:ignore="Autofill,TextContrastCheck" />
-
-    <EditText
-        android:id="@+id/editText_confPassword"
-        android:layout_width="319dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="28dp"
-        android:background="@drawable/edit_text"
-        android:drawableEnd="@drawable/ic_baseline_remove_red_eye"
-        android:ems="10"
-        android:fontFamily="@font/inter_medium"
-        android:hint="@string/confirm_password"
-        android:inputType="textPassword"
-        android:paddingStart="20dp"
-        android:paddingEnd="15dp"
-        android:textColorHint="#243443"
-        android:textColor="#243443"
-        android:textSize="14sp"
-        android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_signupPassword"
-        tools:ignore="Autofill,TextContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@id/editText_signupPhoneEmail"
+        tools:ignore="Autofill,MissingConstraints,TextContrastCheck" />
 
     <Button
         android:id="@+id/button_signupComplete"
         android:layout_width="319dp"
         android:layout_height="54dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="28dp"
         android:background="@drawable/rounded_corner_blue"
         android:fontFamily="@font/inter_medium"
@@ -186,7 +116,7 @@
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_confPassword"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@id/editText_signupPassword"
+        tools:ignore="MissingConstraints,TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
