@@ -35,4 +35,5 @@
     <string name="vehicle_name">Vehicle Name</string>
     <string name="vehicle_license_number">Vehicle License Number</string>
     <string name="other_details">Other Details</string>
+    <string name="title_activity_vehicle_register">VehicleRegisterActivity</string>
 </resources>

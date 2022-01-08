@@ -3,6 +3,8 @@ package com.example.vehicare;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -19,6 +21,8 @@ public class VehicleRegActivity extends AppCompatActivity {
 
     ImageButton ImageButton;
     GoogleSignInClient mGoogleSignInClient;
+    EditText editText_vehLicenseNo, editText_vehInsuNo, editText_vehIDNo;
+    Button button_vehRegComplete;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +30,10 @@ public class VehicleRegActivity extends AppCompatActivity {
         setContentView(R.layout.activity_vehicle_reg);
 
         ImageButton = (android.widget.ImageButton) findViewById(R.id.img_back_vehReg);
+        editText_vehLicenseNo = findViewById(R.id.editText_vehLicenseNo);
+        editText_vehInsuNo = findViewById(R.id.editText_vehInsuNo);
+        editText_vehIDNo = findViewById(R.id.editText_vehIDNo);
+        button_vehRegComplete = findViewById(R.id.button_vehRegComplete);
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
@@ -46,7 +54,6 @@ public class VehicleRegActivity extends AppCompatActivity {
                 }
             }
         });
-
     }
 
     private void signOut() {
