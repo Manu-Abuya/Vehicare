@@ -54,11 +54,28 @@
         tools:ignore="ContentDescription" />
 
     <EditText
+        android:id="@+id/editText_your_car"
+        android:layout_width="319dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edit_text"
+        android:fontFamily="@font/inter_medium"
+        android:hint="Type in Vehicle Brand"
+        android:paddingStart="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_vehreg_logo"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
+
+    <EditText
         android:id="@+id/editText_vehLicenseNo"
         android:layout_width="319dp"
         android:layout_height="54dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="28dp"
         android:background="@drawable/edit_text"
         android:cursorVisible="true"
@@ -76,7 +93,7 @@
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_vehreg_logo"
+        app:layout_constraintTop_toBottomOf="@+id/editText_your_car"
         tools:ignore="Autofill,LabelFor,TextContrastCheck" />
 
     <EditText
@@ -84,7 +101,7 @@
         android:layout_width="319dp"
         android:layout_height="54dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="28dp"
         android:background="@drawable/edit_text"
         android:cursorVisible="true"

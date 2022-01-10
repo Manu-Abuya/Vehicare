@@ -16,11 +16,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 public class SignupActivity extends AppCompatActivity {
 
@@ -30,7 +27,6 @@ public class SignupActivity extends AppCompatActivity {
     FirebaseAuth auth;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
-    DriverInfo driverInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +42,6 @@ public class SignupActivity extends AppCompatActivity {
 
         databaseReference = firebaseDatabase.getReference("DriverInfo");
 
-        driverInfo = new DriverInfo();
 
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
@@ -71,7 +66,6 @@ public class SignupActivity extends AppCompatActivity {
                     Toast.makeText(SignupActivity.this, "Password too short!", Toast.LENGTH_SHORT).show();
                 } else {
                     registerUser(phoneEmail, password);
-                    addDataToFirebase(phoneEmail, password);
                 }
             }
         });
@@ -82,7 +76,7 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
-                    startActivity(new Intent(SignupActivity.this, VehicleActivity.class));
+                    startActivity(new Intent(SignupActivity.this, VehicleRegActivity.class));
                     Toast.makeText(SignupActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(SignupActivity.this, "Registration failed", Toast.LENGTH_SHORT).show();
@@ -91,22 +85,5 @@ public class SignupActivity extends AppCompatActivity {
         });
     }
 
-    private void addDataToFirebase(String phoneEmail, String password) {
-        driverInfo.setDriverUsername(phoneEmail);
-        driverInfo.setDriverPassword(password);
 
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                databaseReference.setValue(driverInfo);
-
-                Toast.makeText(SignupActivity.this, "Data added", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(SignupActivity.this, "Failed to add data " + error, Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
 }

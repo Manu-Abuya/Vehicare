@@ -25,21 +25,29 @@
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/drawable/spinner_sla.xml" value="0.1984375" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_dashboard.xml" value="0.1" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_first.xml" value="0.22" />
+        <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_garage_maps.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_home.xml" value="0.22" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_main2.xml" value="0.18229166666666666" />
+        <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_navigation.xml" value="0.1" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_signin.xml" value="0.1" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_signup.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_startup.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_vehicle.xml" value="0.16822916666666668" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_vehicle_reg.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/activity_vehicle_register.xml" value="0.18229166666666666" />
+        <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/app_bar_navigation.xml" value="0.1" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/content_dashboard.xml" value="0.1" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/content_home.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/content_navigation.xml" value="0.1" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/content_vehicle_register.xml" value="0.18229166666666666" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/fragment_first.xml" value="0.1" />
+        <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
+        <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/fragment_second.xml" value="0.22" />
+        <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/fragment_slideshow.xml" value="0.1" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/main_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/nav_header_navigation.xml" value="0.1" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/vehicle_register_activity.xml" value="0.1" />
       </map>
     </option>
