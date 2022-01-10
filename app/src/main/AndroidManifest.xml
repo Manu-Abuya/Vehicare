@@ -14,9 +14,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Vehicare">
         <activity
-            android:name=".VehicleActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

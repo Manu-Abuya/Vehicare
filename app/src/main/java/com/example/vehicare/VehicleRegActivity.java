@@ -15,21 +15,31 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class VehicleRegActivity extends AppCompatActivity {
 
     ImageButton ImageButton;
     GoogleSignInClient mGoogleSignInClient;
-    EditText editText_vehLicenseNo, editText_vehInsuNo, editText_vehIDNo;
+    EditText editText_your_car, editText_vehLicenseNo, editText_vehInsuNo, editText_vehIDNo;
     Button button_vehRegComplete;
+
+    private FirebaseFirestore db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vehicle_reg);
 
+        db = FirebaseFirestore.getInstance();
+
         ImageButton = (android.widget.ImageButton) findViewById(R.id.img_back_vehReg);
+        editText_your_car = findViewById(R.id.editText_your_car);
         editText_vehLicenseNo = findViewById(R.id.editText_vehLicenseNo);
         editText_vehInsuNo = findViewById(R.id.editText_vehInsuNo);
         editText_vehIDNo = findViewById(R.id.editText_vehIDNo);
@@ -54,6 +64,64 @@ public class VehicleRegActivity extends AppCompatActivity {
                 }
             }
         });
+
+        button_vehRegComplete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String car = editText_your_car.getText().toString().trim();
+                String licence = editText_vehLicenseNo.getText().toString().trim();
+                String insurance = editText_vehInsuNo.getText().toString().trim();
+                String identification = editText_vehIDNo.getText().toString().trim();
+
+                if (!validateInputs(car, licence, insurance, identification)) {
+                    CollectionReference dbVehicleDetails = db.collection("VehicleDetails");
+
+                    VehicleDetails vehicleDetails = new VehicleDetails(
+                            car,
+                            licence,
+                            insurance,
+                            identification
+                    );
+
+                    dbVehicleDetails.add(vehicleDetails)
+                            .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                                @Override
+                                public void onSuccess(DocumentReference documentReference) {
+                                    Toast.makeText(VehicleRegActivity.this, "Vehicle Details added", Toast.LENGTH_SHORT).show();
+                                }
+                            }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(VehicleRegActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    });
+
+                }
+            }
+        });
+    }
+
+    private boolean validateInputs(String car, String license, String insurance, String identification){
+        if (car.isEmpty()){
+            editText_your_car.setError("Field is required");
+            editText_your_car.requestFocus();
+        }
+
+        if (license.isEmpty()){
+            editText_vehLicenseNo.setError("Field is required");
+            editText_vehLicenseNo.requestFocus();
+        }
+
+        if (insurance.isEmpty()){
+            editText_vehInsuNo.setError("Field is required");
+            editText_vehInsuNo.requestFocus();
+        }
+
+        if (identification.isEmpty()){
+            editText_vehIDNo.setError("Field is required");
+            editText_vehIDNo.requestFocus();
+        }
+        return false;
     }
 
     private void signOut() {
