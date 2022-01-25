@@ -24,6 +24,7 @@
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/drawable/ic_view_password.xml" value="0.1984375" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/drawable/rounded_corner.xml" value="0.17777777777777778" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/drawable/rounded_corner_blue.xml" value="0.1984375" />
+        <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/drawable/rounded_corner_color.xml" value="0.1984375" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/drawable/side_nav_bar.xml" value="0.1984375" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/drawable/spinner_bg.xml" value="0.1984375" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/drawable/spinner_sla.xml" value="0.1984375" />
@@ -55,7 +56,7 @@
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/main_fragment.xml" value="0.1" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/nav_header_navigation.xml" value="0.1" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/vehicle_register_activity.xml" value="0.1" />
-        <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/view_database_layout.xml" value="0.1" />
+        <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/layout/view_database_layout.xml" value="0.4466666666666667" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/menu/activity_main_drawer.xml" value="0.6" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/menu/nav.xml" value="0.18229166666666666" />
         <entry key="..\:/Users/MANU/StudioProjects/Vehicare/app/src/main/res/menu/navigation.xml" value="0.22" />
