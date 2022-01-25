@@ -1,21 +1,20 @@
 {
   "project_info": {
-    "project_number": "827300235232",
-    "firebase_url": "https://vehicare-e1e81-default-rtdb.firebaseio.com",
-    "project_id": "vehicare-e1e81",
-    "storage_bucket": "vehicare-e1e81.appspot.com"
+    "project_number": "447280576924",
+    "project_id": "vehicare-5f6fe",
+    "storage_bucket": "vehicare-5f6fe.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:827300235232:android:4f6ce005c0f8d616508d85",
+        "mobilesdk_app_id": "1:447280576924:android:6a664c2535592055077059",
         "android_client_info": {
           "package_name": "com.example.vehicare"
         }
       },
       "oauth_client": [
         {
-          "client_id": "827300235232-dch6p47ujrgkl4hd7qnlb1m0v9sun1ae.apps.googleusercontent.com",
+          "client_id": "447280576924-75gldjcd4hc00ocr6kgs932mtgm1sauk.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.vehicare",
@@ -23,20 +22,20 @@
           }
         },
         {
-          "client_id": "827300235232-2895hqdlvjllnsp2da8077pnrauk4j03.apps.googleusercontent.com",
+          "client_id": "447280576924-2rv4h6d378kesi179gplfkpg5r1sn8lg.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCEoVnNah86NvHVbayUaN3GIyGM9oMqyI4"
+          "current_key": "AIzaSyDHYAp06lLAALpjiTPTAL3YEN52E3WWMFo"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "827300235232-2895hqdlvjllnsp2da8077pnrauk4j03.apps.googleusercontent.com",
+              "client_id": "447280576924-2rv4h6d378kesi179gplfkpg5r1sn8lg.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -76,10 +76,10 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
-                    startActivity(new Intent(SignupActivity.this, VehicleRegActivity.class));
+                    startActivity(new Intent(SignupActivity.this, SigninActivity.class));
                     Toast.makeText(SignupActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(SignupActivity.this, "Registration failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignupActivity.this, "Registration failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
         });

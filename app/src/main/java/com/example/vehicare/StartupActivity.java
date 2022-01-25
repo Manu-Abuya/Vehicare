@@ -103,7 +103,7 @@ public class StartupActivity extends AppCompatActivity {
             // Signed in successfully, show authenticated UI.
 //            updateUI(account); (to be done)
             //Toast.makeText(this, "Sign-in Successful", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(StartupActivity.this, VehicleRegActivity.class);
+            Intent intent = new Intent(StartupActivity.this, ListingActivity.class);
             startActivity(intent);
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
@@ -122,7 +122,7 @@ public class StartupActivity extends AppCompatActivity {
 //        updateUI(account);
         if (account != null) {
             Toast.makeText(this, "User already Signed-in", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(getApplicationContext(), VehicleRegActivity.class);
+            Intent intent = new Intent(getApplicationContext(), ListingActivity.class);
             startActivity(intent);
         }
     }

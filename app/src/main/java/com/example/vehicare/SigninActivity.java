@@ -151,7 +151,7 @@ public class SigninActivity extends AppCompatActivity {
             @Override
             public void onSuccess(AuthResult authResult) {
                 Toast.makeText(SigninActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(SigninActivity.this, VehicleRegActivity.class));
+                startActivity(new Intent(SigninActivity.this, ListingActivity.class));
                 finish();
             }
         });
